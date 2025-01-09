@@ -1,0 +1,17 @@
+{
+  "name": "getrequest",
+  "version": "1.0.0",
+  "description": "all the get request practice collection",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
+  },
+  "author": "Pranjal Jaiswal",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}
