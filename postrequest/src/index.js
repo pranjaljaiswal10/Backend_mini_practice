@@ -36,6 +36,10 @@ app.post("/cars",(req,res)=>{
     res.status(201).json({message:"car added successfully",data:newCar})
 })
 
+app.post("/car/:id",(req,res)=>{
+    
+})
+
 const port=process.env.PORT || 3000
 
 app.listen(port,()=>{
