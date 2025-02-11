@@ -17,11 +17,18 @@
         const btn=document.getElementById("sendBtn")
         const message=document.getElementById("message")
         //get the mesaage from server
-        socket.on('message',message=>console.log(message))
+        socket.on('message',message=>{
+            let span=document.createElement("span")
+            span.innerText=message
+            span.style.fontSize="23px";
+            span.style.display="block" 
+            document.body.appendChild(span)
+        })
         btn.addEventListener("click",(e)=>{
             const value=message.value;
             //send a message to the server
             socket.emit("user-message",value)
+        message.value=""
         })
      </script>
 </body>

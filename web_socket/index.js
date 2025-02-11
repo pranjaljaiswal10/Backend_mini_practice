@@ -18,8 +18,6 @@ io.on("connection",(socket)=>{
   socket.on("user-message", (message) => {
     io.emit("message", message); // Broadcast the message to all clients
   });
-
-  // BAD
  
   //   // Handle disconnection
   //   socket.on("disconnect", () => {
